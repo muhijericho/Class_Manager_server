@@ -34,17 +34,16 @@ app.get(`/users`, (req, res) => {
     
 });
     
-app.get(`/users/:id`, (req, res) => {
+app.get(`/users`, (req, res) => {
     res.status(200).json(user);
 });    
 
-app.get(`/users/:id`, (req, res) => {
+app.get(`/`, (req, res) => {
     res.send(`Server is up and Running`);
 });    
 
 module.exports = app;
 
 app.listen(PORT, () => {
-    console.log(`Server is listening at http://localhost:${PORT}`);
-
+    console.log(`Server is listening at http://localhost:${port}`);
 });
