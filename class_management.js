@@ -35,7 +35,7 @@ app.get(`/users`, (req, res) => {
 });
     
 app.get(`/users`, (req, res) => {
-    res.status(200).json(user);
+    res.status(200).json(users);
 });    
 
 app.get(`/`, (req, res) => {
@@ -47,4 +47,5 @@ module.exports = app;
 app.listen(PORT, () => {
     console.log(`Server is listening at http://localhost:${PORT}`);
 });
+
 
